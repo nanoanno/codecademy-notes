@@ -5,11 +5,11 @@
 
 HTML = HyperText Markup Language
 
-* HTML Tag - The element name, surrounded by an opening (<) and closing (>) angle bracket.
-* HTML element (or simply, element) - a unit of content in an HTML document formed by HTML tags and the text or media it contains.
-* Opening tag - the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.
-* Element content - The information (text or other elements) contained between the opening and closing tags of an HTML element.
-* Closing tag - the second HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside of them, directly after the left angle bracket.
+* **HTML Tag** - The element name, surrounded by an opening (<) and closing (>) angle bracket.
+* **HTML element** (or simply, element) - a unit of content in an HTML document formed by HTML tags and the text or media it contains.
+* **Opening tag** - the first HTML tag used to start an HTML element. The tag type is surrounded by opening and closing angle brackets.
+* **Element content** - The information (text or other elements) contained between the opening and closing tags of an HTML element.
+* **Closing tag** - the second HTML tag used to end an HTML element. Closing tags have a forward slash (/) inside of them, directly after the left angle bracket.
 
 ![HTML Element example][html-element-example]
 
@@ -32,16 +32,16 @@ HTML = HyperText Markup Language
 ===
 
 #DAY TWO
-###LESSON: HTML TAGS
+###Lesson: HTML Tags
 
-* **Headings**: 
+* **Headings**: In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
 
 * **Paragraphs**: Paragraphs (`<p>`) simply contain a block of plain text.
 * **Divs**: `<div>`s can contain any text or other HTML elements. They are primarily used to divide HTML documents into sections.
 * **Spans**: `<span>`s contain short pieces of text or other HTML. They are primarily used to wrap small pieces of content that are on the same line as other content and do not break text into different sections.
 
-* The <em> tag will generally render as italic emphasis.
-* The <strong> will generally render as bold emphasis.
+* The `<em>` tag will generally render as italic emphasis.
+* The `<strong>` will generally render as bold emphasis.
 
 * **Line Breaks**: You may see line breaks written as `<br />` or `<br>`. Both are valid break tags. (Note: In HTML5, self-closing tags no longer need the '/' at the end of a tag.)
 
