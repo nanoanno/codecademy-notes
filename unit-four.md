@@ -105,8 +105,71 @@ In th1. is lesson, we covered the four properties of the box model: height and w
 1. The `overflow` property can be set to `display`, `hide`, or `scroll`, and dictates how HTML will render content that overflows its parent's content area.
 
 
+##DAY TWO-THREE
+###Lesson: CSS Display
 
+####Inline Display
+Every HTML element has a default `display` value that dictates if it can share horizontal space with other elements. Some elements fill the entire browser from left to right regardless of the size of their content. Other elements only take up as much horizontal space as their content requires and can be directly next to other elements.
 
+In this lesson, we’ll cover three values for the `display` property: `inline`, `block`, and `inline-block`.
+
+(The default display for some tags, such as `<em>`, `<strong>`, and `<a>`, is called inline. Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document.)
+
+The CSS `display` property provides the ability to make any element an inline element. 
+
+####Block Display
+Some elements are not displayed in the same line as the content around them. These are called __block-level__ elements. These elements fill the entire width of the page and, unless specified, are the height necessary to accommodate the content inside.
+
+Elements that are block-level by default include all levels of heading elements (`<h1>` through `<h6>`), `<p>`, `<div>` and `<footer>`.
+
+Complete list of block elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
+
+####Inline-Block Display
+The third value for the `display` property is `inline-block`. Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the `width` and `height` properties. Images are the best example of default inline-block elements.
+
+####Positioning
+The `position` property specifies where an element is placed in relation to other elements and whether the element moves when the user scrolls. Just as all elements have a default `display` value, they also have a default `position` value. We can change the default position of an element by setting its position property. The position property can take one of four values:
+
+1. `static` — an element will be positioned where it naturally occurs in the flow of the document from left to right, top to bottom (the default value).
+1. `absolute` — an element will be positioned exactly where it is specified in relation to the nearest non-statically positioned element; it is removed from the flow of the web page.
+1. `relative` — an element will be positioned in relation to where it would have occurred in the flow of the document; it is NOT removed from the flow and space is reserved for it.
+1. `fixed` — an element will be positioned in the same place in the viewport of the browser (the part of the browser that contains the website being viewed) at all times, even if the user scrolls; it is removed from the flow of the web page.
+
+####Absolute
+The first consideration is that when an element's positioning is set to absolute, the element is removed from the flow of the document and no space is reserved for it. The element is essentially floating on top of the rest of the content. This means that all elements that come after it will shift up and/or to the left, depending on the `display` values for those elements.
+
+The next thing to keep in mind is that when an element’s position is changed to absolute, the element will move to the top left of the nearest container element that is not statically positioned. If no elements on the page have position declarations, the element will move to the top left of the view and move as the user scrolls. If the parent container of an element (such as a `div` that contains an image) is positioned, the absolutely positioned element (the image) will be positioned relative to the containing element (the `div`).
+
+There are 4 values for offsetting position:
+
+1. `top` — specifies how far from the top of the non-static parent container the element should be.
+1. `left` — specifies how far from the left of the non-static parent container the element should be.
+1. `right` — specifies how far from the right of the non-static parent container the element should be.
+1. `bottom` — specifies how far from the bottom of the non-static parent container the element should be.
+
+####Fixed
+Fixed positioning causes an element to remain visible to the user at all times; even when scrolling, a fixed element will not move. 
+
+####Relative
+Unlike `absolute` and `fixed` positioning, `relative` positioning does not remove an element from the flow of an HTML document.
+
+####Z-index
+The `z-index` property controls how far "back" or how far "forward" a non-static element should appear on the web page. The `z-index` property accepts integer values. These values instruct the browser in which order to display the elements on the web page.
+
+The default value of `z-index` is `auto`. In practice, the browser will search for the `z-index` of the parent elements until it finds one. If none of the parent elements have a `z-index` declared, the `z-index` of the element will default to `0`. Therefore, it is not necessary to set the `z-index` of `.description` to `0`, as `.description` does not have a parent element with a `z-index` other than `0`. Negative `z-index` values are not accepted. Setting the `z-index` of `.navigation` to a number greater than `0` is sufficient to prevent overlapping content. `z-index` values are somewhat arbitrary — they don't need to start at `1`. Any element that you wish to display in front of another item simply needs a `z-index` greater than the element beneath it.
+
+#####Review
+Review
+
+1. The default positioning of elements is based on the __flow__ of the HTML file.
+1. Inline elements appear next to each other on the same line.
+1. You can position elements to be displayed on their own line using block display.
+1. Inline-block elements are on the same line as each other and their size can be set.
+1. The default positioning for any element is `static` which means it will appear exactly as it does in the flow of the HTML document.
+1. Elements with `absolute` positioning are removed from the flow of the document and positioned in relation to the parent element. This positioning will override display properties. An element with absolute positioning will scroll.
+1. Elements with `fixed` positioning will not scroll as the page scrolls. This removes the element from the flow of the document.
+1. Elements with `relative` positioning specify the element's distance from where it would have been positioned in the flow of the HTML document.
+1. Non-static elements can be displayed in front or behind another element using the `z-index` property.
 
 
 
