@@ -1,7 +1,7 @@
 # Codecadmey Notes: Unit 4 - Display and Positioning
 
 ##DAY ONE
-###Lesson: The Box Model
+###LESSON: THE BOX MODEL
 
 The box model comprises the set of properties which define parts of an element that take up space on a web page. The model includes the content area's size (width and height) and the element's padding, border, and margin. The properties include:
 
@@ -106,7 +106,7 @@ In th1. is lesson, we covered the four properties of the box model: height and w
 
 
 ##DAY TWO-THREE
-###Lesson: CSS Display
+###LESSON: CSS DISPLAY
 
 ####Inline Display
 Every HTML element has a default `display` value that dictates if it can share horizontal space with other elements. Some elements fill the entire browser from left to right regardless of the size of their content. Other elements only take up as much horizontal space as their content requires and can be directly next to other elements.
@@ -173,6 +173,28 @@ Review
 
 ##DAYS FOUR-FIVE
 ###FLEXBOX
+
+Display options:
+`display: flex;`
+`display: inline-flex;`
+
+`justify-content`
+1. `flex-start` — all items will be positioned in order starting, from the left of the parent container, with no extra space between or before them.
+1. `flex-end` — all items will be positioned in order, with the last item starting on the right side of the parent container, with no extra space between or after them.
+1. `center` — all items will be positioned in order, in the center of the parent container with no extra space before, between, or after them.
+1. `space-around` — items will be positioned with equal space before and after each item, resulting in double the space between elements.
+1. `space-between` — items will be positioned with equal space between them, but no extra space before the first or after the last elements.
+
+`align-items`
+1. `flex-start` — all elements will be positioned at the top of the parent container.
+1. `flex-end` — all elements will be positioned at the bottom of the parent container.
+1. `center` — the center of all elements will be positioned halfway between the top and bottom of the parent container.
+1. `baseline` — the bottom of the content of all items will be aligned with each other.
+1. `stretch` — if possible, the items will stretch from top to bottom of the container (this is the default value; elements with a specified height will not stretch; elements with a minimum height or no height specified will stretch).
+
+`flex-grow` (defulat is `0`)
+`flex-shrink` (defulat is `1`)
+
 
 
 
