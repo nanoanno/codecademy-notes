@@ -222,6 +222,47 @@ Note: The `flex-wrap` property is declared on flex containers.
 1. `space-around` — all rows of elements will be spaced evenly from the top to the bottom of the container with the same amount of space at the top and bottom and between each element.
 1. `stretch` — if a minimum height or no height is specified, the rows of elements will stretch to fill the parent container from top to bottom (default value).
 
+The major axis is used to position flex items with the following properties:
+`justify-content`
+`flex-wrap`
+`flex-grow`
+`flex-shrink`
+
+The cross axis is used to position flex items with the following properties:
+`align-items`
+`align-content`
+
+The major axis and cross axis are interchangeable. We can switch them using the `flex-direction` property. If we add the `flex-direction` property and give it a value of `column`, the flex items will be ordered vertically, not horizontally.
+
+`flex-direction`
+
+1. `row` — elements will be positioned from left to right across the parent element starting from the top left corner (default).
+1. `row-reverse` — elements will be positioned from right to left across the parent element starting from the top right corner.
+1. `column` — elements will be positioned from top to bottom of the parent element starting from the top left corner.
+1. `column-reverse` — elements will be positioned from the bottom to the top of the parent element starting from the bottom left corner.
+
+Like the `flex` property, the `flex-flow` property is used to declare both the `flex-wrap` and `flex-direction` properties in one line.
+
+#####REVIEW
+
+1. `display: flex` changes an element to a block-level container with flex items inside of it.
+1. `display: inline-flex` allows multiple flex containers to appear inline with each other.
+1. `justify-content` is used to space items along the major axis.
+1. `align-items` is used to space items along the cross axis.
+1. `flex-grow` is used to specify how much space (and in what proportions) flex items absorb along the major axis.
+1. `flex-shrink` is used to specify how much flex items shrink and in what proportions along the major axis.
+1. `flex-basis` is used to specify the initial size of an element styled with  `flex-grow` and/or `flex-shrink`.
+1. `flex` is used to specify `flex-grow`, `flex-shrink`, and `flex-basis` in one declaration.
+1. `flex-wrap` specifies that elements should shift along the cross axis if the flex container is not large enough.
+1. `align-content` is used to space rows along the cross axis.
+1. `flex-direction` is used to specify the major and cross axes.
+1. `flex-flow` is used to specify `flex-wrap` and `flex-direction` in one declaration.
+1. Flex containers can be nested inside of each other by declaring `display: flex` or `display: inline-flex` for children of flex containers.1. 
+
+
+
+
+
 
 [box-model]: https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/diagram-boxmodel.svg
 [margin-collapse]: https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/diagram-verticalmargins.svg
