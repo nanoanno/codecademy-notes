@@ -91,3 +91,47 @@ To target by resolution, we can use the `min-resolution` and `max-resolution` me
 ```
 
 ####And Operator
+By placing the `and` operator between the two media features, the browser will require both media features to be true before it renders the CSS within the media query. The `and` operator can be used to chain as many media features as necessary.
+
+####Comma Separated List
+If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list.
+
+Note that the second media feature is `orientation`. The `orientation` media feature detects if the page has more width than height. If a page is wider, it's considered `landscape`, and if a page is taller, it's considered `portrait`.
+
+####Review
+
+* When a website responds to the size of the screen it's viewed on, it’s called a _responsive_ website.
+* You can write _media queries_ to help with different screen sizes.
+* Media queries require _media features_. Media features are the conditions that must be met to render the CSS within a media query.
+* Media features can detect many aspects of a user's browser, including the screen's width, height, resolution, orientation, and more.
+* The `and` operator requires multiple media features to be true at once.
+* A comma separated list of media features only requires one media feature to be true for the code within to be applied.
+* The best practice for identifying where media queries should be set is by resizing the browser to determine where the content naturally breaks. Natural breakpoints are found by resizing the browser.
+
+##DAY THREE
+###BROWSER COMPATABILITY
+
+Restting User Agent Stylesheets:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Title</title>
+  <link href="reset.css" type="text/css" rel="stylesheet">
+  <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+```
+
+Popular CSS reset: http://meyerweb.com/eric/tools/css/reset/
+
+Brwoser Support: http://caniuse.com/
+Vendor Prefixes: https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix
+
+Polyfills:
+
+1. Detect the user's browser.
+1. Collect information about which features are supported by the browser.
+1. Return the collected information to your website.
+
+Polyfill creator: https://modernizr.com/
