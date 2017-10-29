@@ -1,7 +1,7 @@
 # Codecadmey Notes: Unit 1 - HTML
 
 ##DAY ONE
-###Lesson: An Introductin to HTML
+### AN INTRODUCTION TO HTML
 
 HTML = HyperText Markup Language
 
@@ -13,7 +13,7 @@ HTML = HyperText Markup Language
 
 ![HTML Element example][html-element-example]
 
-#####Review
+##### REVIEW
 
 1. HTML stands for HyperText Markup Language and is used to create the structure and content of a webpage.
 1. Most HTML elements contain opening and closing tags with raw text or other HTML tags between them.
@@ -32,7 +32,7 @@ HTML = HyperText Markup Language
 ===
 
 #DAY TWO
-###Lesson: HTML Tags
+### HTML TAGS
 
 * **Headings**: In HTML, there are six different headings, or heading elements. Headings can be used for a variety of purposes, like titling sections, articles, or other forms of content.
 
@@ -59,7 +59,7 @@ HTML = HyperText Markup Language
 
 _**Semantic vs. Non-semantic Tags**: Some of the tags we have used, such as `<div>`, are called non-semantic tags. This means that they do not describe the content that is inside of them. However, many tags are used to describe the content that they surround, which helps us modify and style our content later. These are called semantic tags and `<nav>` is one of them!_
 
-####Review
+#### REVIEW
 
 1. Headings and sub-headings, `<h1>` to `<h6>` tags, are used to enlarge text.
 `<p>`, `<span>` and `<div>` tags specify text or blocks.

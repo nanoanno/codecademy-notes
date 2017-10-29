@@ -1,7 +1,7 @@
 # Codecadmey Notes: Unit 4 - Display and Positioning
 
-##DAY ONE
-###LESSON: THE BOX MODEL
+## DAY ONE
+### LESSON: THE BOX MODEL
 
 The box model comprises the set of properties which define parts of an element that take up space on a web page. The model includes the content area's size (width and height) and the element's padding, border, and margin. The properties include:
 
@@ -14,19 +14,19 @@ The image below is a visual representation of the box model.
 
 ![box-model][box-model]
 
-####Height and Width
+#### Height and Width
 An element's content has two dimensions: a height and a width. By default, the dimension of an HTML box are set to hold the raw contents of the box.
 
 The CSS `height` and `width` properties can be used to modify these default dimensions.
 
-####Borders
+#### Borders
 A _border_ is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific `width`, `style`, and `color`.
 
 * `width` — The thickness of the border. A border's thickness can be set in pixels or with one of the following keywords: `thin`, `medium`, or `thick`.
 * `style` — The design of the border. Web browsers can render any of 10 different styles. Some of these styles include: `none`, `dotted`, and `solid`.
 * `color` The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords.
 
-####Padding
+#### Padding
 The space between the contents of a box and the borders of a box is known as padding. Padding is like the space between a picture and the frame surrounding it. In CSS, you can modify this space with the `padding` property.
 
 If you want to be more specific about the amount of padding on each side of a box's content, you can use the following properties:
@@ -38,7 +38,7 @@ If you want to be more specific about the amount of padding on each side of a bo
 
 Another implementation of the `padding` property lets you specify exactly how much padding there should be on each side of the content in a single declaration.
 
-####Margins
+#### Margins
 
 Margin refers to the space directly outside of the box. The `margin` property is used to specify the size of this space.
 
@@ -70,7 +70,7 @@ Study the graphic display to the right. Elements A and B have 20 pixels of horiz
 
 ![margin-collapse][margin-collapse]
 
-####Overflow
+#### Overflow
 All of the components of the box model comprise an element’s size. For example, an image that has the following dimensions is 364 pixels wide and 244 pixels tall.
 
 * 300 pixels wide
@@ -91,7 +91,7 @@ The `overflow` property controls what happens to content that spills, or overflo
 * `visible` - when set to this value, the overflow content will be displayed outside of the containing element. Note, this is the default value.
 
 
-#####Review
+##### Review
 In th1. is lesson, we covered the four properties of the box model: height and width, padding, borders, and margins. Understanding the box model is an important step towards learning more advanced HTML and CSS topics. Let's take a minute to review what you learned.
 
 1. The box model comprises a set of properties used to create space around and between HTML elements.
@@ -104,11 +104,10 @@ In th1. is lesson, we covered the four properties of the box model: height and w
 1. `margin: 0 auto` horizontally centers an element inside of its parent content area, if it has a width.
 1. The `overflow` property can be set to `display`, `hide`, or `scroll`, and dictates how HTML will render content that overflows its parent's content area.
 
+## DAY TWO-THREE
+### LESSON: CSS DISPLAY
 
-##DAY TWO-THREE
-###LESSON: CSS DISPLAY
-
-####Inline Display
+#### Inline Display
 Every HTML element has a default `display` value that dictates if it can share horizontal space with other elements. Some elements fill the entire browser from left to right regardless of the size of their content. Other elements only take up as much horizontal space as their content requires and can be directly next to other elements.
 
 In this lesson, we’ll cover three values for the `display` property: `inline`, `block`, and `inline-block`.
@@ -117,17 +116,17 @@ In this lesson, we’ll cover three values for the `display` property: `inline`,
 
 The CSS `display` property provides the ability to make any element an inline element. 
 
-####Block Display
+#### Block Display
 Some elements are not displayed in the same line as the content around them. These are called __block-level__ elements. These elements fill the entire width of the page and, unless specified, are the height necessary to accommodate the content inside.
 
 Elements that are block-level by default include all levels of heading elements (`<h1>` through `<h6>`), `<p>`, `<div>` and `<footer>`.
 
 Complete list of block elements: https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements
 
-####Inline-Block Display
+#### Inline-Block Display
 The third value for the `display` property is `inline-block`. Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the `width` and `height` properties. Images are the best example of default inline-block elements.
 
-####Positioning
+#### Positioning
 The `position` property specifies where an element is placed in relation to other elements and whether the element moves when the user scrolls. Just as all elements have a default `display` value, they also have a default `position` value. We can change the default position of an element by setting its position property. The position property can take one of four values:
 
 1. `static` — an element will be positioned where it naturally occurs in the flow of the document from left to right, top to bottom (the default value).
@@ -135,7 +134,7 @@ The `position` property specifies where an element is placed in relation to othe
 1. `relative` — an element will be positioned in relation to where it would have occurred in the flow of the document; it is NOT removed from the flow and space is reserved for it.
 1. `fixed` — an element will be positioned in the same place in the viewport of the browser (the part of the browser that contains the website being viewed) at all times, even if the user scrolls; it is removed from the flow of the web page.
 
-####Absolute
+#### Absolute
 The first consideration is that when an element's positioning is set to absolute, the element is removed from the flow of the document and no space is reserved for it. The element is essentially floating on top of the rest of the content. This means that all elements that come after it will shift up and/or to the left, depending on the `display` values for those elements.
 
 The next thing to keep in mind is that when an element’s position is changed to absolute, the element will move to the top left of the nearest container element that is not statically positioned. If no elements on the page have position declarations, the element will move to the top left of the view and move as the user scrolls. If the parent container of an element (such as a `div` that contains an image) is positioned, the absolutely positioned element (the image) will be positioned relative to the containing element (the `div`).
@@ -147,18 +146,18 @@ There are 4 values for offsetting position:
 1. `right` — specifies how far from the right of the non-static parent container the element should be.
 1. `bottom` — specifies how far from the bottom of the non-static parent container the element should be.
 
-####Fixed
+#### Fixed
 Fixed positioning causes an element to remain visible to the user at all times; even when scrolling, a fixed element will not move. 
 
-####Relative
+#### Relative
 Unlike `absolute` and `fixed` positioning, `relative` positioning does not remove an element from the flow of an HTML document.
 
-####Z-index
+#### Z-index
 The `z-index` property controls how far "back" or how far "forward" a non-static element should appear on the web page. The `z-index` property accepts integer values. These values instruct the browser in which order to display the elements on the web page.
 
 The default value of `z-index` is `auto`. In practice, the browser will search for the `z-index` of the parent elements until it finds one. If none of the parent elements have a `z-index` declared, the `z-index` of the element will default to `0`. Therefore, it is not necessary to set the `z-index` of `.description` to `0`, as `.description` does not have a parent element with a `z-index` other than `0`. Negative `z-index` values are not accepted. Setting the `z-index` of `.navigation` to a number greater than `0` is sufficient to prevent overlapping content. `z-index` values are somewhat arbitrary — they don't need to start at `1`. Any element that you wish to display in front of another item simply needs a `z-index` greater than the element beneath it.
 
-#####Review
+##### Review
 Review
 
 1. The default positioning of elements is based on the __flow__ of the HTML file.
@@ -171,8 +170,8 @@ Review
 1. Elements with `relative` positioning specify the element's distance from where it would have been positioned in the flow of the HTML document.
 1. Non-static elements can be displayed in front or behind another element using the `z-index` property.
 
-##DAYS FOUR-FIVE
-###FLEXBOX
+## DAYS FOUR-FIVE
+### FLEXBOX
 
 Display options:
 `display: flex;`
@@ -243,7 +242,7 @@ The major axis and cross axis are interchangeable. We can switch them using the 
 
 Like the `flex` property, the `flex-flow` property is used to declare both the `flex-wrap` and `flex-direction` properties in one line.
 
-#####REVIEW
+##### REVIEW
 
 1. `display: flex` changes an element to a block-level container with flex items inside of it.
 1. `display: inline-flex` allows multiple flex containers to appear inline with each other.

@@ -1,7 +1,7 @@
 # Codecadmey Notes: Unit 3 - Command Line and Git
 
-##DAY ONE
-###Lesson: Command Line Navigation
+## DAY ONE
+### Lesson: Command Line Navigation
 
 The command line is a text interface for your computer. It's a program that takes in commands which you type. These commands are then passed on to the computer's operating system to run.
 
@@ -9,7 +9,7 @@ To access the command line, we use a terminal emulator, often just called the te
 
 In the terminal, first you see $. This is called a shell prompt. It appears when the terminal is ready to accept a command.
 
-#####REVIEW: 
+##### REVIEW: 
 The command line is a text interface for the computer's operating system. To access the command line, we use the terminal.
 
 A filesystem organizes a computer's files and directories into a tree structure. It starts with the root directory. Each parent directory can contain more child directories and files.
@@ -21,8 +21,8 @@ From the command line, you can navigate through files and folders on your comput
 * `mkdir` creates a new directory in the working directory.
 * `touch` creates a new file inside the working directory.
 
-##DAY TWO
-###Lesson: Git Workflow
+## DAY TWO
+### Lesson: Git Workflow
 
 ![Git Workflow][git-workflow]
 
@@ -32,7 +32,7 @@ A Git project can be thought of as having three parts:
 1. A Staging Area: where you'll list changes you make to the working directory
 1. A Repository: where Git permanently stores those changes as different versions of the project
 
-#####REVIEW:
+##### REVIEW:
 
 Git is the industry-standard version control system for web developers.
 

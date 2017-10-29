@@ -1,18 +1,18 @@
 # Codecadmey Notes: Unit 5 - Responsive Design
 
-##DAY ONE
-###LESSON: 
+## DAY ONE
+### RESPONSIVE DESIGN: SIZING ELEMENTS
 
 Responsive design refers to the ability of a website to resize and reorganize its content based on:
 
 1. The size of other content on the website.
 1. The size of the screen the website is being viewed on.
 
-####Em
+#### Em
 
 The em represents the size of the base font being used. For example, if the base font of a browser is 16 pixels (which is normally the default size of text in a browser), then 1 em is equal to 16 pixels. 2 ems would equal 32 pixels, and so on.
 
-####Rem
+#### Rem
 
 Rem stands for root em. It acts similar to em, but instead of checking parent elements to size font, it checks the root element. The root element is the `<html>` tag.
 
@@ -57,8 +57,8 @@ body {
 * When the height of an image or video is set, then its width can be set to `auto` so that the media scales proportionally. Reversing these two properties and values will also achieve the same result.
 * A background image of an HTML element will scale proportionally when its `background-size` property is set to `cover`.
 
-##DAY TWO
-###MEDIA QUERIES
+## DAY TWO
+### MEDIA QUERIES
 
 Breakdown of Media Query components: 
 
@@ -67,7 +67,7 @@ Breakdown of Media Query components:
 1. `and (max-width : 480px)` — This part of the rule is called a _media feature_, and instructs the CSS compiler to apply the CSS styles to devices with a width of 480 pixels or smaller. Media features are the conditions that must be met in order to render the CSS within a media query.
 1. CSS rules are nested inside of the media query's curly braces. The rules will be applied when the media query is met. In the example above, the text in the `body` element is set to a `font-size` of `12px` when the user's screen is less than 480px.
 
-####Range
+#### Range
 
 ```css
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -86,7 +86,7 @@ Breakdown of Media Query components:
 }
 ```
 
-####Dots Per Inch (DPI)
+#### Dots Per Inch (DPI)
 
 To target by resolution, we can use the `min-resolution` and `max-resolution` media features. 
 
@@ -96,15 +96,15 @@ To target by resolution, we can use the `min-resolution` and `max-resolution` me
 }
 ```
 
-####And Operator
+#### And Operator
 By placing the `and` operator between the two media features, the browser will require both media features to be true before it renders the CSS within the media query. The `and` operator can be used to chain as many media features as necessary.
 
-####Comma Separated List
+#### Comma Separated List
 If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list.
 
 Note that the second media feature is `orientation`. The `orientation` media feature detects if the page has more width than height. If a page is wider, it's considered `landscape`, and if a page is taller, it's considered `portrait`.
 
-####Review
+#### Review
 
 * When a website responds to the size of the screen it's viewed on, it’s called a _responsive_ website.
 * You can write _media queries_ to help with different screen sizes.
@@ -114,8 +114,8 @@ Note that the second media feature is `orientation`. The `orientation` media fea
 * A comma separated list of media features only requires one media feature to be true for the code within to be applied.
 * The best practice for identifying where media queries should be set is by resizing the browser to determine where the content naturally breaks. Natural breakpoints are found by resizing the browser.
 
-##DAY THREE
-###BROWSER COMPATABILITY
+## DAY THREE
+### BROWSER COMPATABILITY
 
 Restting User Agent Stylesheets:
 
