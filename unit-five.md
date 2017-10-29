@@ -18,27 +18,33 @@ Rem stands for root em. It acts similar to em, but instead of checking parent el
 
 Example of code commonly uesd for images:
 
+```css
 .container {
   width: 50%;
   height: 200px;
   overflow: hidden;
 }
+```
 
+```css
 .container img {
   max-width: 100%;
   height: auto;
   display: block;
 }
+```
 
 
 background image scaling: 
 
+```css
 body {
   background-image: url('#');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+```
 
 * Content on a website can be sized relative to other elements on the page using _relative measurements_.
 * The unit of `em` sizes font relative to the font size of a parent element.
